@@ -28,7 +28,7 @@ abstract = f.read()
 
 def show_properties(abstract):
 
-    sentences = abstract.split('.')[:-1]
+    sentences = [sentence for sentence in abstract.split('.') if sentence]
     print(f'Number of sentences : {len(sentences)}')
 
     words = remove_punctuation(abstract.split())
@@ -69,12 +69,23 @@ def display_reverse(abstract):
 def sentence_properties(abstract):
     sentences = abstract.split('.')
     lengths = [[len(word) for word in sentence.split()] for sentence in sentences]
-    print(lengths)
     means = [sum(length)/len(length) for length in lengths if length]
     print(means)
 
 if __name__ == '__main__':
+
+    print('Main properties:')
     show_properties(abstract)
+    print('----------')
+
+    print('Text aligned to right, with max row lenght = 55:')
     display_align_right(abstract)
+    print('----------')
+
+    print('Text reversed:')
     display_reverse(abstract)
+    print('----------')
+
+    print('Main word lenghth for each sentence:')
     sentence_properties(abstract)
+    print('----------')
