@@ -20,4 +20,4 @@ Oprócz prezentacji konwersatoryjnych w sekcji Pliki, proszę o zapoznanie się 
 
 4. Napisać program, który wyznaczy liczbę dni między dwiema datami podanymi przy uruchamianiu programu z linii poleceń w formacie DD-MM-YYYY. W szczególności proszę wyznaczyć liczbę dni między datami bitwy pod Grunwaldem (15. lipca 1410) oraz bitwy warszawskiej (przyjmijmy tu datę 15. sierpnia 1920). Przykładowe polecenie uruchmienia programu (zad4.py) powinno zatem wyglądać następująco:
 
-<python zad4.py 15-07-1410 15-08-1920>
+```python zad4.py 15-07-1410 15-08-1920```
